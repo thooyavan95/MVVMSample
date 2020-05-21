@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="12dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/profile"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:text="Photographer_Name"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            style="@style/TextAppearance.AppCompat.Small"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:id="@+id/contact"-->
+<!--            android:layout_marginBottom="6dp"-->
+<!--            android:text="Contact Info"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            style="@style/TextAppearance.AppCompat.Small"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:id="@+id/number"-->
+<!--            android:layout_marginBottom="6dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:text="9876543210"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            style="@style/TextAppearance.AppCompat.Small"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginBottom="6dp"-->
+<!--            android:id="@+id/hire"-->
+<!--            android:layout_below="@id/contact"-->
+<!--            android:text="Available for hire"/>-->
+
+<!--        <Switch-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="6dp"-->
+<!--            style="@style/TextAppearance.AppCompat.Small"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:layout_below="@id/contact"-->
+<!--            android:id="@+id/switch_hire"/>-->
+
+
+<!--    </RelativeLayout>-->
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager">
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab"/>
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>
